@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Taller de Javascript</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="/index.html">Taller 1</a></li>
+          <li><a href="/percentage.html">Taller 2</a></li>
+          <li><a href="/average.html">Taller 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form>
+          <img src="./assets/img/square.png" />
+          <h1>CUADRADO</h1>
+          <div class="container-label">
+            <label for="price">¿Cuanto mide cada lado del cuadrado?</label>
+          </div>
+          <input type="text" id="square" placeholder="Ingrese el lado..." />
+          <div class="container-actions column">
+            <button type="button" onclick="perimeterOfSquare()">
+              CALCULAR PERIMETRO
+            </button>
+            <button type="button" onclick="areaOfSquare()">
+              CALCULAR AREA
+            </button>
+          </div>
+          <p id="square-perimeter" class="underline"></p>
+          <p id="square-area" class="underline"></p>
+        </form>
+      </section>
+
+      <section>
+        <form>
+          <img src="./assets/img/triangle.png" />
+          <h1>TRIANGULO</h1>
+          <div class="container-label">
+            <label for="price"
+              >¿Cuanto mide cada uno de los lados de su triangulo?</label
+            >
+          </div>
+          <input type="text" id="side" placeholder="Lados..." />
+          <input type="text" id="base" placeholder="Base..." />
+          <div class="container-actions column">
+            <button type="button" onclick="perimeterOfTriangle()">
+              CALCULAR PERIMETRO
+            </button>
+            <button type="button" onclick="areaOfTriangle()">
+              CALCULAR AREA
+            </button>
+          </div>
+          <p id="triangle-result" class="underline center"></p>
+        </form>
+      </section>
+
+      <section>
+        <form>
+          <img src="./assets/img/circle.png" />
+          <h1>CIRCULO</h1>
+          <div class="container-label">
+            <label for="price">¿Cuanto mide el radio de su circulo?</label>
+          </div>
+          <input type="text" id="circle" placeholder="Ingrese el radio..." />
+          <div class="container-actions column">
+            <button type="button" onclick="perimeterOfCircle()">
+              CALCULAR PERIMETRO
+            </button>
+            <button type="button" onclick="areaOfCircle()">
+              CALCULAR AREA
+            </button>
+          </div>
+          <p id="circle-perimeter" class="underline center"></p>
+          <p id="circle-area" class="underline center"></p>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/geometry.js"></script>
+  </body>
+</html>

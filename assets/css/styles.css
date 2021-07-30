@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Amatic SC", cursive;
+  font-family: "Indie Flower", cursive;
+  font-size: 16px;
+  margin: 0;
+  background-color: #50cb93;
+  height: 100%;
+  color: #54436b;
+}
+/* HEADER */
+header {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header img {
+  width: 150px;
+  height: 50px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+header nav ul li:last-of-type {
+  margin-right: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #54436b;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+/* MAIN */
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 80px auto 0 auto;
+  min-height: 100%;
+  height: auto;
+}
+
+main section {
+  width: 330px;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* FORM */
+main section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section form h1 {
+  text-align: center;
+}
+main section form i {
+  font-size: 80px;
+}
+main section form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  outline: none;
+  margin: 10px;
+  color: #54436b;
+}
+main section form input::placeholder {
+  color: #54436b;
+  font-weight: bold;
+  opacity: 0.5;
+}
+.container-label {
+  width: 100%;
+}
+/* BUTTONS */
+main section form .container-actions {
+  width: 100%;
+  margin: 6px 0;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.row button {
+  max-width: 90px;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.column button {
+  width: auto;
+}
+main section form .container-actions button {
+  background: #54436b;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid transparent;
+  margin: 5px 0;
+}
+main section form .container-actions button:hover {
+  opacity: 0.8;
+}
+/* RESULT */
+main section form p {
+  font-size: 25px;
+  margin: 10px;
+}
+.underline {
+  border-bottom: 2px solid #54436b;
+}
+.center {
+  text-align: center;
+}
